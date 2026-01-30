@@ -1,0 +1,127 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.container {
+  background: #3071bd;
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 20px 10px 0px rgba(71, 71, 71, 0.15);
+}
+
+/* Heading */
+.container h2 {
+  margin-bottom: 15px;
+  color: #ffffff;
+  
+}
+
+/* Input */
+#location {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #4facfe;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #2f8dfc;
+}
+
+/* Weather box */
+.weather-box {
+  margin-top: 20px;
+  display: none;
+  color:#fff;
+}
+
+
+/* Weather icon */
+#icon {
+  width: 80px;
+  height: 80px;
+}
+
+/* Temperature */
+#temp {
+  font-size: 40px;
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+/* Description & details */
+#desc,
+#humidity,
+#wind {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 4px 0;
+  padding-bottom: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Forecast section */
+.forecast-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+/* Forecast card */
+.forecast-item {
+  background: #abe7f1;
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
+  font-size: 12px;
+  color: black;
+}
+
+.forecast-item img {
+  width: 40px;
+}
+
+/* Mobile friendly */
+@media (max-width: 480px) {
+  .forecast-container {
+    flex-wrap: wrap;
+  }
+
+  .forecast-item {
+    flex: 1 1 30%;
+  }
+}
